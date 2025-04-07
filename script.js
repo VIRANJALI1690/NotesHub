@@ -4,13 +4,13 @@ function toggleMenu() {
 
   function showPDF(subject) {
     const pdfMap = {
-      html: "pdf/html.pdf",
-      css: "pdf/css.pdf",
-      js: "pdf/js.pdf",
-      dsa: "pdf/dsa.pdf",
-      python: "pdf/python.pdf",
-      java: "pdf/java.pdf",
-      ai: "pdf/ai.pdf"
+      html: "html.pdf",
+      css: "css.pdf",
+      js: "js.pdf",
+      dsa: "dsa.pdf",
+      python: "python.pdf",
+      java: "java.pdf",
+      ai: "ai.pdf"
     };
 
     const titles = {
