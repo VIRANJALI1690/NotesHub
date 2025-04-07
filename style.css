@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  nav {
+    background-color: #6a0dad;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+
+  .nav-links a:hover {
+    background-color: #f9d923;
+    color: #000;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 30px 15px 15px;
+    font-size: 24px;
+  }
+
+  .subject-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .subject-btn {
+    padding: 12px 20px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .subject-btn:hover {
+    background-color: #5a019d;
+  }
+
+  .pdf-container {
+    text-align: center;
+    display: none;
+    padding: 20px;
+  }
+
+  .pdf-container h2 {
+    margin-bottom: 15px;
+  }
+
+  embed {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .pdf-buttons {
+    margin-top: 15px;
+  }
+
+  .pdf-buttons button,
+  .pdf-buttons a {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .view-btn {
+    background-color: #28a745;
+    color: white;
+  }
+
+  .download-btn {
+    background-color: #007bff;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      margin-top: 10px;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .subject-btn {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    embed {
+      height: 300px;
+    }
+  }

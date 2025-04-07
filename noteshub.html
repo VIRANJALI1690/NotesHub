@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav>
+    <a href="#" class="logo">Notes Hub</a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="noteshub.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <h1>📚 Hey! Select a subject to view and download PDFs</h1>
+
+  <div class="subject-list">
+    <button class="subject-btn" onclick="showPDF('html')">HTML</button>
+    <button class="subject-btn" onclick="showPDF('css')">CSS</button>
+    <button class="subject-btn" onclick="showPDF('js')">JavaScript</button>
+    <button class="subject-btn" onclick="showPDF('dsa')">DSA</button>
+    <button class="subject-btn" onclick="showPDF('python')">Python</button>
+    <button class="subject-btn" onclick="showPDF('java')">Java</button>
+    <button class="subject-btn" onclick="showPDF('ai')">AI</button>
+  </div>
+
+  <div class="pdf-container" id="pdfViewer">
+    <h2 id="pdfTitle"></h2>
+    <embed id="pdfEmbed" src="" type="application/pdf" />
+    <div class="pdf-buttons">
+      <button class="view-btn" onclick="viewPDF()">View</button>
+      <a id="downloadLink" class="download-btn" download>Download</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
